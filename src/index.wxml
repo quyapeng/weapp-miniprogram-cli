@@ -1,0 +1,20 @@
+<!-- component/Privacy/index.wxml -->
+<view class="mask" wx:if="{{ popShow }}">
+  <view class="tips">
+    <view class="tips-title">隐私协议提示</view>
+    <view class="tips-content">
+      <!-- privacyContractName 为微信返回的协议名称，也可以自定义展示内容 -->
+      <view catch:tap="goPrivacy">
+        使用前请仔细阅读
+        <text class="blue">{{ privacyContractName }}</text>
+        。当您点击同意后，即表示您已阅读理解并同意该条款内容，该条款将对您产生法律约束力。如您拒绝，将无法使用该服务。
+      </view>
+    </view>
+    <view class="btn-group">
+      <button class="btn" id="disagree-btn" bindtap="handleDisagree">拒绝</button>
+      <button class="btn primary" type="primary" id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgree">
+        同意
+      </button>
+    </view>
+  </view>
+</view>

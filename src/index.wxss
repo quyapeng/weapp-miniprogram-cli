@@ -1,0 +1,40 @@
+/* component/Privacy/index.wxss */
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.tips {
+  width: 80%;
+  border-radius: 20rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30rpx 20rpx;
+  margin: 10% 10%;
+}
+.tips-title {
+  text-align: center;
+  font-size: 16rpx;
+}
+.tips-content {
+  margin-top: 10rpx;
+  font-size: 14rpx;
+  margin-bottom: 10rpx;
+  /* min-height: 100rpx; */
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+}
+.btn-group .btn {
+  width: 200rpx;
+}
+.blue {
+  color: cornflowerblue;
+}
