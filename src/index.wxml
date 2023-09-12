@@ -1,4 +1,5 @@
 <!-- component/Privacy/index.wxml -->
+<!-- <wxs module="index" src="../index.wxss"></wxs> -->
 <view class="mask" wx:if="{{ popShow }}">
   <view class="tips">
     <view class="tips-title">隐私协议提示</view>
@@ -8,6 +9,7 @@
         使用前请仔细阅读
         <text class="blue">{{ privacyContractName }}</text>
         。当您点击同意后，即表示您已阅读理解并同意该条款内容，该条款将对您产生法律约束力。如您拒绝，将无法使用该服务。
+        <text class="title" wx:if="{{title}}">本小程序仅支持{{title}}会员使用。</text>
       </view>
     </view>
     <view class="btn-group">

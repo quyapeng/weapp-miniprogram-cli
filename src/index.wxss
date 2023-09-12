@@ -38,3 +38,6 @@
 .blue {
   color: cornflowerblue;
 }
+.title {
+  color: cornflowerblue;
+}

@@ -24,6 +24,9 @@ Component({
       type: Boolean,
       value: true,
     },
+    title: {
+      type: String,
+    },
   },
 
   /**
